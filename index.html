@@ -8,14 +8,20 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            line-height: 1.6;
+            text-align: center; /* Center-align the text */
         }
 
-        header {
+        header, footer {
             text-align: center;
         }
 
         section {
             margin-bottom: 20px;
+            text-align: left; /* Left-align the text within sections */
+            max-width: 800px; /* Set a maximum width for better readability on larger screens */
+            margin-left: auto; /* Center-align the section */
+            margin-right: auto; /* Center-align the section */
         }
 
         h1, h2, h3 {
@@ -25,67 +31,48 @@
         p {
             color: #666;
         }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "\2022"; /* Add a bullet point before each list item */
+            color: #007BFF; /* Set bullet point color */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Your Name</h1>
-        <p>Web 开发者</p>
+        <p>Robot Dynamics</p>
     </header>
 
     <section>
-        <h2>联系信息</h2>
-        <p>Email: your.email@example.com</p>
+        <h2>Contact Information</h2>
+        <p>Email: 1203016783@qq.com</p>
         <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/yourname/" target="_blank">linkedin.com/in/yourname</a></p>
     </section>
 
-    <section>
-        <h2>技能</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React.js, Vue.js</li>
-            <li>Node.js, Express.js</li>
-            <li>Git, GitHub</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>教育背景</h2>
-        <h3>学位名称, 学校名称, 毕业时间</h3>
-        <p>在这里写一些关于你的学术背景的描述。</p>
-    </section>
-
-    <section>
-        <h2>项目经验</h2>
-        <h3>项目名称</h3>
-        <p>项目描述和你在项目中扮演的角色。</p>
-
-        <h3>另一个项目名称</h3>
-        <p>项目描述和你在项目中的具体贡献。</p>
-    </section>
-
-    <section>
-        <h2>工作经验</h2>
-        <h3>公司名称, 职位, 工作时间</h3>
-        <p>工作描述和你在公司中的主要职责。</p>
-
-        <h3>另一家公司, 职位, 工作时间</h3>
-        <p>工作描述和你在公司中的贡献。</p>
-    </section>
-
-    <section>
-        <h2>个人项目</h2>
-        <h3>项目名称</h3>
-        <p>项目描述和你在项目中的角色。</p>
-
-        <h3>另一个项目名称</h3>
-        <p>项目描述和你在项目中的具体贡献。</p>
-    </section>
+    <!-- ... (other sections) ... -->
 
     <footer>
-        <p>最后更新于: 2023年11月</p>
+        <p>Last Updated: November 2023</p>
     </footer>
 
 </body>
